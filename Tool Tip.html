@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizing US Jail Population Data</title>
+  <style>
+    rect {
+      pointer-events: all;
+      fill-opacity: 0;
+      stroke-opacity: 0;
+      z-index: 1;
+    }
+
+    .tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: none;
+    opacity: .75;
+  }
+  
+  </style>
+</head>
+
+<body>
+  <div id="chart-container"></div>
+  <div id="tooltip"></div>
+
+  <!-- Include the D3.js library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Include your custom script file -->
+  <script src="scriptfinal.js"></script>
+  <button id="goToPage1">Go to Page 1</button>
+  <button id="goToPage3">Go to Page 3</button>
+
+  <script>
+    document.getElementById("goToPage1").addEventListener("click", function () {
+      // Navigate to Page 1 when the button is clicked
+      window.location.href = "myhtml.html";
+    });
+
+    document.getElementById("goToPage3").addEventListener("click", function () {
+      // Navigate to Page 3 when the button is clicked
+      window.location.href = "areachart.html";
+    });
+  </script>
+</body>
+
+</html>
