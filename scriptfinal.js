@@ -170,7 +170,7 @@ d3.csv("Nas_updated.csv").then(function (data) {
       .style("display", "block")
       .style("left", `${xPos + 100}px`)
       .style("top", `${yPos + 50}px`)
-      .html(`<strong>Date:</strong> ${d.date.toLocaleDateString()}<br><strong>Population:</strong> ${d.population !== undefined ? (d.population / 1000).toFixed(0) + 'k' : 'N/A'}`)
+      .html(`<strong>Date:</strong> ${d.date.toLocaleDateString()}<br><strong>Close Value:</strong> ${d.population !== undefined ? (d.population / 1000).toFixed(0) + 'k' : 'N/A'}`)
   });
   // listening rectangle mouse leave function
 
