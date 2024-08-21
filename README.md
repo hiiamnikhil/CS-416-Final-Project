@@ -1,1 +1,1 @@
-# CS-416-Final-Project
+# Stock Analysis DashBoard
